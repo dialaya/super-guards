@@ -1,0 +1,36 @@
+@import "ember-bootstrap/bootstrap";
+
+html {
+  scroll-padding-top: 70px; /* height of sticky header */
+}
+body {
+  //padding-top: 50px;
+  scroll-padding-top: 70px; /* height of sticky header */
+  header {
+    margin-bottom: 4rem !important;
+  }
+
+  footer {
+    &.app-footer {
+       background: #161e2c;
+       font-size: 14px;
+       font-size: .875rem;
+       line-height: 1.43;
+       color: #F7F7F7;
+     }
+    .mentions {
+      border-bottom: 1px solid #2b3340;
+    }
+  }
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+
+
