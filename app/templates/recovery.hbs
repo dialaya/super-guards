@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="h-100 p-4">
+    <div class="w-md-75 mx-auto p-md-2">
+      <h2 class="text-center">Mot de passe oubli&eacute; ?</h2>
+      <p class="text-center">
+        Pas de problème : veuillez nous communiquer votre identifiant ou adresse e-mail ou le numéro de téléphone mobile que vous avez enregistré sur notre site.
+      </p>
+
+      <FormBuilder @for={{this}} @action={{this.submit}} as |f|>
+        <f.input @attr="login" @name="login" @as="string" @placeholder="" @label="Identifiant / Email / Numéro de mobile" />
+        <div class="d-flex justify-content-center">
+          <div class="m-md-2 m-sm-1">
+            <f.submit @text="Suivant" class="btn btn-info" />
+          </div>
+        </div>
+      </FormBuilder>
+    </div>
+  </div>
+</div>

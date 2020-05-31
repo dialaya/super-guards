@@ -8,6 +8,54 @@ body {
   scroll-padding-top: 70px; /* height of sticky header */
   header {
     margin-bottom: 4rem !important;
+    .site-name {
+      color: #ffffff !important;
+    }
+    .header-btn {
+      color: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+  }
+
+  main {
+    .hero-section {
+      padding: 2em 0 3rem;
+      .module-item {
+        margin: 0 .5rem;
+      }
+      .hero {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      .av-modules {
+        maring-bottom: 5rem;
+      }
+    }
+    .partners-section {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      .partners {
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        .partners-list {
+          margin: 1rem !important;
+        }
+      }
+    }
+    .stats-section {
+      background-color: #fafafa;
+    }
+
   }
 
   footer {
@@ -17,6 +65,7 @@ body {
        font-size: .875rem;
        line-height: 1.43;
        color: #F7F7F7;
+       position: static !important; /*override fixed*/
      }
     .mentions {
       border-bottom: 1px solid #2b3340;

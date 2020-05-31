@@ -8,6 +8,16 @@ module.exports = function(defaults) {
       extension: 'scss'
     },
 
+    /*fontawesome: {
+      icons: {
+        'free-solid-svg-icons': 'all',
+        'pro-light-svg-icons': [
+          'adjust',
+          'ambulance'
+        ]
+      }
+    },*/
+
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapCSS': false

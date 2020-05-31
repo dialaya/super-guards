@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="h-100 p-4">
+    <div class="w-md-75 mx-auto p-md-2">
+      <h2 class="text-center">Inscrivez-vous gratuitement</h2>
+
+      <FormBuilder @for={{this}} @action={{this.submit}} as |f|>
+        <f.input @attr="firstName" @name="firstName" @as="string" @placeholder="Pr&eacute;nom" @label=" " />
+        <f.input @attr="lastName" @name="lastName" @as="string" @placeholder="Nom" @label=" " />
+        <f.input @attr="email" @name="email" @as="email" @placeholder="Email" @label=" " />
+        <f.input @attr="password" @name="password" @as="password" @placeholder="Mot de passe" @label=" " />
+        <div class="form-group">
+          <div class="alert alert-warning" role="alert">
+            J’accepte les <a href="#">CGU</a> et la <a href="#">D&eacute;claration de confidentialit&eacute;</a> de Job Board.
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="m-md-2 m-sm-1">
+            <f.submit @text="Suivant" class="btn btn-info" />
+          </div>
+        </div>
+      </FormBuilder>
+    </div>
+  </div>
+</div>
